@@ -1,0 +1,12 @@
+.button-icon {
+  padding: 10px;
+  border-radius: 4px;
+  background: var(--white);
+  border: 2px solid var(--purple);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-icon img {
+  vertical-align: middle;
+}
