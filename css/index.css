@@ -1,0 +1,13 @@
+:root {
+  --gradient: radial-gradient(41.48% 11.48% at 2.38% 8.52%, #747DE9 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(135deg, #72EDF2 0%, #5151E5 100%);
+}
+
+body {
+  background: var(--gradient);
+  min-block-size: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
