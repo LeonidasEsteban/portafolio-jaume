@@ -10,25 +10,29 @@
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header-content">
+        <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
+        <nav class="menu" aria-label="main-navigation">
+          <ul>
+            <li>
+              <a class="is-active" href="#main">Hola</a>
+            </li>
+            <li>
+              <a href="#project">Proyectos</a>
+            </li>
+            <li>
+              <a href="#contact">Hablemos</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button">Curriculum</button>
+      </div>
+    </div>
+  </header>
   <div class="wrapper">
-    <header class="header">
 
-      <img src ="./images/logo.png" width="70" height="20" alt="logo muy bonito">
-      <nav class="menu" aria-label="main-navigation">
-        <ul>
-          <li>
-            <a class="is-active" href="#main">Hola</a>
-          </li>
-          <li>
-            <a href="#project">Proyectos</a>
-          </li>
-          <li>
-            <a href="#contact">Hablemos</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="button">Curriculum</button>
-    </header>
 
     <section aria-label="main" class="hero" id="main">
       <div class="hero-image">
@@ -52,12 +56,12 @@
       </div>
     </section>
 
-    <div class="testimony">
-      <div class="testimony-image">
+    <div class="project" id="project">
+      <div class="project-image">
         <img src="./images/leonidas-esteban.png" alt="">
       </div>
-      <div class="testimony-description">
-        <a class="testimony-title" target="_blank" href="https://leonidasesteban.com">LeonidasEsteban.com</a>
+      <div class="project-description">
+        <a class="title" target="_blank" href="https://leonidasesteban.com">LeonidasEsteban.com</a>
         <p>Accede a más de 120 proyectos que te ayudarán a mejorar
         tus habilidades como desarrollador Front-End.</p>
         <a target="_blank" href="https://github.com/asdas/asdas" class="button is-secondary">Ver Código</a>
@@ -66,12 +70,12 @@
 
     </div>
 
-    <div class="testimony">
-      <div class="testimony-image">
+    <div class="project">
+      <div class="project-image">
         <img src="./images/marvol.png" alt="">
       </div>
-      <div class="testimony-description">
-        <a class="testimony-title" target="_blank" href="https://leonidasesteban.com">LeonidasEsteban.com</a>
+      <div class="project-description">
+        <a class="title" target="_blank" href="https://leonidasesteban.com">LeonidasEsteban.com</a>
         <p>Accede a más de 120 proyectos que te ayudarán a mejorar
           tus habilidades como desarrollador Front-End.</p>
         <a target="_blank" href="https://github.com/asdas/asdas" class="button is-secondary">Ver Código</a>
@@ -79,12 +83,12 @@
       </div>
 
     </div>
-    <div class="testimony">
-      <div class="testimony-image">
+    <div class="project">
+      <div class="project-image">
         <img src="./images/netnet.png" alt="">
       </div>
-      <div class="testimony-description">
-        <a class="testimony-title" target="_blank" href="https://leonidasesteban.com">LeonidasEsteban.com</a>
+      <div class="project-description">
+        <a class="title" target="_blank" href="https://leonidasesteban.com">LeonidasEsteban.com</a>
         <p>Accede a más de 120 proyectos que te ayudarán a mejorar
           tus habilidades como desarrollador Front-End.</p>
         <a target="_blank" href="https://github.com/asdas/asdas" class="button is-secondary">Ver Código</a>
@@ -92,24 +96,46 @@
       </div>
 
     </div>
-    <footer class="footer">
-      <div class="footer-logo">
-        <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
+    <form action="" method="POST" class="form">
+      <div class="form-content">
+        <h2 class="title">Hablemos</h2>
+        <p>Si está interesado en trabajar conmigo en su próximo proyecto,
+        no dude en ponerse en contacto conmigo.</p>
+        <label for="form-name">
+          Nombre Completo
+          <input required name="name" id="form-name" type="text" placeholder="juan">
+        </label>
+        <label for="form-name">
+          Correo electrónico
+          <input required name="email" id="form-name" type="email" placeholder="juan">
+        </label>
+        <label for="form-name">
+          Mensaje
+          <textarea required name="message" placeholder="Mensaje" id="form-message" cols="30" rows="7"></textarea>
+        </label>
+        <button class="button" type="submit">Enviar mensaje</button>
       </div>
+    </form>
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
+        </div>
 
-      <div class="social">
-        <a class="button-icon" href="tel:234243242"><img src="./icons/icon-phone.svg"></a>
-        <a class="button-icon" href="tel:234243242"><img src="./icons/icon-important_mail.svg"></a>
-        <a class="button-icon" href="tel:234243242"><img src="./icons/icon-instagram.svg"></a>
-        <a class="button-icon" href="tel:234243242"><img src="./icons/icon-twitter.svg"></a>
-      </div>
-      <div class="footer-copyright">
-        <p>
-          Hecho con el ❤️ por Leo.
-        </p>
-        <p>
-          Copyright 2021 - Todos los derechos reservados.
-        </p>
+        <div class="social">
+          <a class="button-icon" href="tel:234243242"><img src="./icons/icon-phone.svg"></a>
+          <a class="button-icon" href="tel:234243242"><img src="./icons/icon-important_mail.svg"></a>
+          <a class="button-icon" href="tel:234243242"><img src="./icons/icon-instagram.svg"></a>
+          <a class="button-icon" href="tel:234243242"><img src="./icons/icon-twitter.svg"></a>
+        </div>
+        <div class="footer-copyright">
+          <p>
+            Hecho con el ❤️ por Leo.
+          </p>
+          <p>
+            Copyright 2021 - Todos los derechos reservados.
+          </p>
+        </div>
       </div>
     </footer>
   </div>
