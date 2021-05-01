@@ -7,12 +7,16 @@
   flex-direction: column;
   gap: 16px;
 }
-.hero-social {
-  padding-block-end: 24px;
-}
+
 .hero-image {
   text-align: center;
 }
+
+.hero-image img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
 
 .hero h1 {
   font: var(--headline3);

@@ -4,6 +4,9 @@
 @import "./hero.css";
 @import "./wrapper.css";
 @import "./menu.css";
+@import "./testimony.css";
+@import "./social.css";
+@import "./footer.css";
 
 
 :root {
@@ -28,6 +31,7 @@ body {
   min-block-size: 100vh;
   font: var(--body1);
   color: var(--purple);
+  margin: 0;
 }
 
 
