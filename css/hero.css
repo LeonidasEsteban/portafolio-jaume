@@ -1,0 +1,25 @@
+.hero  {
+  padding-block-start: 16px;
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.hero-social {
+  padding-block-end: 24px;
+}
+.hero-image {
+  text-align: center;
+}
+
+.hero h1 {
+  font: var(--headline3);
+  margin: 0;
+}
+/* .hero h1 span:nth-of-type(1) { */
+.hero h1 span:first-child {
+  font: var(--headline5);
+  display: block;
+}

@@ -9,6 +9,8 @@
   border-radius: 4px;
   text-transform: uppercase;
   border: none;
+  text-decoration: none;
+  text-align: center;
 }
 
 .button.is-secondary {

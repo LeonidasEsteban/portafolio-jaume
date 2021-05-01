@@ -1,6 +1,7 @@
 @import "./button.css";
 @import "./button-icon.css";
 @import "./header.css";
+@import "./hero.css";
 
 
 :root {
@@ -24,7 +25,7 @@ body {
   background: var(--gradient);
   min-block-size: 100vh;
   font: var(--body1);
-  color: var(--green);
+  color: var(--purple);
 }
 
 
